@@ -5,7 +5,7 @@
 VAGRANTFILE_API_VERSION = "2"
 
 $script = <<SCRIPT
-    curl https://mcloud.io/install.sh |sh
+    curl https://mcloud.io/install.sh |sudo sh
 SCRIPT
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
