@@ -1,0 +1,15 @@
+redis:
+    image: redis
+
+flask:
+    image: python:2.7.8
+    cmd: /usr/src/app/run.sh
+    volumes:
+      .: /usr/src/app
+    wait: 100
+
+web:
+    image: nginx
+
+    volumes:
+        nginx.conf: /etc/nginx.conf
