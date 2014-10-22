@@ -1,5 +1,6 @@
 web:
-    image: orchardup/nginx
+    image: orchardup/nginx:latest
 
     volumes:
         public: /var/www
+        /root: /foo
