@@ -1,0 +1,11 @@
+{
+  "name": "mcloud-nodejs-runtime",
+  "description": "mCloud + Node.JS + Socket.IO + Express",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "body-parser": "*",
+    "express": "*",
+    "socket.io": "*"
+  }
+}
