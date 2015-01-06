@@ -1,0 +1,12 @@
+nodejs:
+    image: google/nodejs
+    volumes:
+        nodejs: /app
+    cmd: /app/run.sh
+    wait: 600
+
+nginx:
+    image: nginx
+    volumes:
+        nginx/public: /var/www
+        nginx/nginx.conf: /etc/nginx/nginx.conf
