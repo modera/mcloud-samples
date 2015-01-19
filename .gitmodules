@@ -1,0 +1,3 @@
+[submodule "modera-foundation"]
+	path = modera-foundation
+	url = https://github.com/modera/foundation

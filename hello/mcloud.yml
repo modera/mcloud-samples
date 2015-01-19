@@ -1,4 +1,19 @@
+
+web2:
+    image: orchardup/nginx:latest
+
+    volumes:
+        public2: /var/www
+        /root: /foo
 web:
+    image: orchardup/nginx:latest
+
+    volumes:
+        public: /var/www
+        /root: /foo
+
+~prod:
+  logs:
     image: orchardup/nginx:latest
 
     volumes:
