@@ -1,21 +1,14 @@
+redis:
+    image: redis:2.8
 
-web2:
-    image: orchardup/nginx:latest
+flask:
+    web: 5000
+    dockerfile: |
+        FROM python:2.7.8
+        RUN  pip install Flask redis
 
+    workdir: /usr/src/app
     volumes:
-        public2: /var/www
-        /root: /foo
-web:
-    image: orchardup/nginx:latest
+        .: /usr/src/app
 
-    volumes:
-        public: /var/www
-        /root: /foo
-
-~prod:
-  logs:
-    image: orchardup/nginx:latest
-
-    volumes:
-        public: /var/www
-        /root: /foo
+    cmd: python app.py
