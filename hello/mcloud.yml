@@ -1,4 +1,5 @@
 web:
+    web: 80
     image: orchardup/nginx:latest
 
     volumes:
